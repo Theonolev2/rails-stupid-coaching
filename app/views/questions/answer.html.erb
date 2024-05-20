@@ -1,0 +1,19 @@
+<div class="section">
+  <h2>Your question</h2>
+  <%= @question%>
+</div>
+
+<div class="section coach">
+  <h2>Coach's answer</h2>
+  <%if (@question == "I am going to work")%>
+    <p>Great!</p>
+  <%elsif @question[-1] == "?"%>
+    <p>Silly question, get dressed and go to work!</p>
+  <%else%>
+    <p>I don't care, get dressed and go to work!</p>
+  <%end%>
+</div>
+
+<div class="link">
+  <%= link_to "Ask another question", ask_path%>
+</div>

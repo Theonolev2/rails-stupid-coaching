@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+.section {
+  border-left: 4px solid #DDDDDD;
+  margin: 16px;
+  padding: 8px;
+}
+
+ .coach {
+  background-color: #FFFFE1;
+ }
+
+ .link{
+  margin: 16px;
+  text-decoration: none;
+ }
